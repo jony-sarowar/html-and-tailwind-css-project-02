@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodman</title>
+    <!-- custom css -->
+    <!-- <link rel="stylesheet" href="/css/custom.css" /> -->
+    <link rel="stylesheet" href="/css/output.min.css" />
+
+    <!-- owl carousel css -->
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+    
+    <!-- output css -->
+    <link rel="stylesheet" href="/css/output.min.css">
+    <!-- wow css -->
+    <link rel="stylesheet" href="/css/animate.css">
+    <!-- remix icon css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!-- ionicon js cdn -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body class="font-poppins">
+    <!-- header section start here -->
+    <header class="bg-[#FC7F09] fixed top-0 w-full z-30">
+      <!-- nav start -->
+      <nav class="container mx-auto flex justify-between items-center p-5 h-[72px]">
+        <!-- logo text -->
+        <div class="text-2xl font-semibold text-white">
+          <a href="#">Food<span class="text-black">man</span></a>
+        </div>
+        <div class="">
+          <ul
+            class="flex md:flex-row items-center flex-col md:gap-x-14 gap-y-5 font-medium w-full absolute md:static md:w-auto left-0 justify-center bg-[#FC7F09] md:bg-transparent transition-all ease-in duration-500 top-[-450px] py-5 md:py-0 "
+          >
+            <li><a class="hover:text-white duration-500" href="#">Home</a></li>
+            <li><a class="hover:text-white duration-500" href="#">Special</a></li>
+            <li><a class="hover:text-white duration-500" href="#">Chef</a></li>
+            <li><a class="hover:text-white duration-500" href="#">Clients</a></li>
+            <li><a class="hover:text-white duration-500" href="#">Contact Us</a></li>
+            
+          </ul>
+        </div>
+        <div class="flex items-center">
+          <!-- shop icon -->
+           <div class="bg-white w-[50px] h-[50px] rounded-full flex items-center justify-center invisible md:visible">
+            <a href=""><ion-icon name="bag-handle" class="text-2xl text-[#FC7F09]" ></ion-icon></a>
+           </div>
+          <!-- hamburger icon -->
+          <ion-icon name="menu" onclick="Menu(this)" class="text-2xl cursor-pointer md:hidden text-white"></ion-icon>
+        </div>
+      </nav>
+      <!-- nav end -->
+    </header>
+    <!-- header section end here -->
+
+    <!-- header content start here -->
+    <section class="mt-10">
+      <div class="container mx-auto pt-20" >
+        <div class="text-center md:text-left md:flex md:items-center md:justify-between">
+          <!-- header img -->
+          <div class="md:order-2 wow fadeInRight">
+            <img class="inline md:max-w-[600px]" src="/img/header.png" alt="">
+          </div>
+          <div class="mt-8 md:mt-0 md:order-1 md:max-w-[45%] md:pr-20 pr-0 ">
+            <h1 class="font-bold text-6xl leading-tight wow fadeInUp" data-wow-delay="0.4s" >Meet, Eat & Enjoy The <span class="text-[#fc7f09]">True Taste</span>.</h1>
+            <p class="py-5 text-gray-400 wow fadeInUp" data-wow-delay="0.6s" >Discover the true essence of culinary delight as you meet, eat, and savor the authentic flavors that define our passion for food.</p>
+            <!-- button -->
+            <button class="bg-[#fc7f09] text-white px-4 py-2 rounded-lg hover:bg-[#DB6E09] duration-500 wow fadeInUp" data-wow-delay="0.8s">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- header content end here -->
+
+    <!-- Special Dish sectiion start here -->
+    <section>
+      <div class="container mx-auto px-4 mt-24">
+        <div class="">
+          <div class="md:grid md:grid-cols-7">
+            <div class="md:col-start-3 md:col-span-3 text-center">
+              <h1 class="text-4xl font-bold mb-8">Our Special Dish</h1>
+            <p class="text-gray-400 pb-16">Each dish promises an unforgettable dining experience, blending innovation with tradition to delight your senses.</p>
+            </div>
+          </div>
+          <div class="main md:grid md:grid-cols-3 sm:grid sm:grid-cols-2 md:gap-14">
+            <!-- Dish items -->
+            <div class="text-center p-5 mb-10 hover:shadow-[0px_15px_50px_-15px_rgba(0,0,0,0.3)] duration-500 rounded-[40px] ">
+              <img class="max-w-52 inline  drop-shadow-2xl" src="/img/special-1.png" alt="">
+              <h2 class="text-2xl font-semibold py-5">Chicken Veg Curry</h2>
+              <p class="text-gray-400">Diced chicken simmered in aromatic curry sauce with mixed veggies like potatoes, cauliflower, and beans for a hearty, flavorful dish.</p>
+              <div class="gap-x-8 text-[#DAA520] my-5">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <div>
+                <span class="text-xl font-semibold">$12.50</span>
+                <button class="bg-[#fc7f09] text-white px-4 py-2 ml-5 rounded-lg hover:bg-[#DB6E09] duration-500">Add to Cart</button>
+              </div>
+            </div>
+            <!-- Dish items -->
+            <div class="text-center p-5 mb-10 hover:shadow-[0px_15px_50px_-15px_rgba(0,0,0,0.3)] duration-500 rounded-[40px]">
+              <img class="max-w-52 inline drop-shadow-2xl" src="/img/special-2.png" alt="">
+              <h2 class="text-2xl font-semibold py-5">Chicken Veg Stir-Fry</h2>
+              <p class="text-gray-400">Diced chicken simmered in aromatic curry sauce with mixed veggies like potatoes, cauliflower, and beans for a hearty, flavorful dish.</p>
+              <div class="gap-x-8 text-[#DAA520] my-5">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <div>
+                <span class="text-xl font-semibold">$18.50</span>
+                <button class="bg-[#fc7f09] text-white px-4 py-2 ml-5 rounded-lg hover:bg-[#DB6E09] duration-500">Add to Cart</button>
+              </div>
+            </div>
+            <!-- Dish items -->
+            <div class="text-center p-5 hover:shadow-[0px_15px_50px_-15px_rgba(0,0,0,0.3)] duration-500 rounded-[40px]">
+              <img class="max-w-52 inline drop-shadow-2xl" src="/img/special-3.png" alt="">
+              <h2 class="text-2xl font-semibold py-5">Chicken Veg Pasta</h2>
+              <p class="text-gray-400">Diced chicken simmered in aromatic curry sauce with mixed veggies like potatoes, cauliflower, and beans for a hearty, flavorful dish.</p>
+              <div class="gap-x-8 text-[#DAA520] my-5">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <div>
+                <span class="text-xl font-semibold">$15.50</span>
+                <button class="bg-[#fc7f09] text-white px-4 py-2 ml-5 rounded-lg hover:bg-[#DB6E09] duration-500">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Special Dish sectiion end here -->
+
+    <!-- Serve section start here -->
+    <section>
+      <div class="container mx-auto">
+        <div class="p-10 md:grid md:grid-cols-2 place-items-center ">
+          <!-- serve img -->
+          <div class="mt-28 mb-14 sm:flex sm:flex-col sm:place-items-center wow fadeInLeft">
+            <img class="max-w-[300px] sm:max-w-[400px] inline text-center" src="/img/explore.png" alt="">
+          </div>
+          <!-- serve content -->
+          <div class="text-center md:text-left md:pr-32 sm:pr-10 sm:flex sm:flex-col place-items-center">
+            <h1 class="text-4xl font-bold mb-6 wow fadeInUp" data-wow-delay="0.4s">We Serve Healthy & Tasty Food</h1>
+            <p class="text-gray-400 wow fadeInUp" data-wow-delay="0.6s">Indulge guilt-free with our commitment to serving wholesome and delicious meals. Explore a menu curated to balance taste and nutrition, ensuring every bite is both satisfying and nourishing.</p>
+            <div class="md:text-left mt-10 wow fadeInUp" data-wow-delay="0.8s">
+              <button class="bg-[#FC7F09] text-white px-5 py-2 rounded-lg flex  hover:bg-[#DB6E09] duration-500 ">Explore Story 
+                <ion-icon class="pl-1 text-2xl" name="arrow-forward-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Serve section end here -->
+
+    <!-- order section start here -->
+    <section>
+      <div class="container mx-auto">
+        <div class="p-10 mt-20 md:grid md:grid-cols-3 sm:grid sm:grid-cols-2 sm:gap-8 gap-16">
+          <!-- order items -->
+          <div class="card p-5 shadow-[0px_15px_50px_-15px_rgba(0,0,0,0.3)] rounded-xl wow fadeInUp" data-wow-duration="0.4s">
+            <div class="mb-10">
+              <i class="ri-bowl-fill text-white bg-[#62B15C] text-3xl px-3 py-3 rounded-2xl"></i>
+            </div>
+            <div class="">
+              <h2 class="text-3xl font-semibold mb-5">Order Your Food</h2>
+              <p class="text-gray-400 mb-5">Seamlessly place your food orders online with just a few clicks. Enjoy convenience and efficiency as you select from our diverse menu of delectable dishes.</p>
+              <button class="text-[#FC7F09]">Read more <i class="ri-arrow-right-line"></i></button>
+            </div>
+          </div>
+          <!-- order items -->
+          <div class="card mt-10 sm:mt-0 md:mt-0 p-5 shadow-[0px_15px_50px_-15px_rgba(0,0,0,0.3)] rounded-xl wow fadeInUp" data-wow-duration="1s">
+            <div class="mb-10">
+              <i class="ri-truck-fill text-white bg-[#FF3E67] text-3xl px-3 py-3 rounded-2xl"></i>
+            </div>
+            <div>
+              <h2 class="text-3xl font-semibold mb-5">Pick Your Food</h2>
+              <p class="text-gray-400 mb-5">Seamlessly place your food orders online with just a few clicks. Enjoy convenience and efficiency as you select from our diverse menu of delectable dishes.</p>
+              <button class="text-[#FC7F09]">Read more <i class="ri-arrow-right-line"></i></button>
+            </div>
+          </div>
+          <!-- order items -->
+          <div class="card mt-10 md:mt-0 p-5 shadow-[0px_15px_50px_-15px_rgba(0,0,0,0.3)] rounded-xl wow fadeInUp" data-wow-duration="1.6s" >
+            <div class="mb-10">
+              <i class="ri-star-smile-fill text-white bg-[#185ADB] text-3xl px-3 py-3 rounded-2xl"></i>
+            </div>
+            <div>
+              <h2 class="text-3xl font-semibold mb-5">Enjoy Your Food</h2>
+              <p class="text-gray-400 mb-5">Seamlessly place your food orders online with just a few clicks. Enjoy convenience and efficiency as you select from our diverse menu of delectable dishes.</p>
+              <button class="text-[#FC7F09]">Read more <i class="ri-arrow-right-line"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- order section end here -->
+
+    <!-- Chefs section start here -->
+    <section id="">
+      <div class="container mx-auto p-6">
+        <div>
+          <div class="md:grid md:grid-cols-2 md:gap-32 md:place-items-center grid grid-cols-1 place-items-center">
+            <div class="max-w-[450px] max-h-[450px] bg-[#FC7F09] rounded-full overflow-hidden mb-10 order-1 md:order-2">
+                <img class="wow fadeInRight" src="/img/chef.png" alt="">
+            </div>
+            <div class="order-2 md:order-1">
+              <h1 class="text-4xl font-bold mb-10 text-center md:text-left leading-relaxed wow fadeInUp" data-wow-delay="0.4s">Cooked By The Best Chefs In The World</h1>
+              <p class="text-gray-400 wow fadeInUp" data-wow-duration="0.8s">Experience culinary excellence crafted by master chefs from around the globe. Our team of culinary virtuosos brings together expertise, innovation, and passion to create unforgettable dining experiences that redefine gastronomy.</p>
+              <div class="font-medium mt-10">
+                <button class="mb-3 cursor-default wow fadeInUp" data-wow-duration="1s" ><i class="ri-checkbox-fill text-2xl text-green-600 pr-3"></i>Savour culinary brilliance from master chefs worldwide.</button>
+                <button class="mb-3 cursor-default wow fadeInUp" data-wow-duration="2s" ><i class="ri-checkbox-fill text-2xl text-[#FF3E67] pr-3"></i>Experience innovative creations with attention to detail.</button>
+                <button class="cursor-default wow fadeInUp" data-wow-duration="3s"><i class="ri-checkbox-fill text-2xl text-[#185ADB] pr-3"></i>Enjoy dishes crafted with an unwavering passion for perfection.</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Chefs section end here -->
+
+    <!-- transform img -->
+    <div class="mt-20 ">
+      <img class="left-[-50px] max-w-[300px] -translate-x-10 transform" src="/img/topping.png" alt="">
+    </div>
+
+    <!-- Customers section start here -->
+    <section class="">
+      <div class="container mx-auto px-10">
+        <div>
+          <div class=" md:grid md:grid-cols-6 gap-16 md:px-32">
+            <!-- content -->
+            <div class="md:col-start-2 md:col-span-4">
+              <h1 class="font-semibold text-5xl text-center">What Our Customers Are Saying</h1>
+            <p class="text-center my-10 text-[#6b7280]">Discover firsthand experiences and testimonials from our valued patrons. Explore the feedback and reviews that showcase our commitment to quality, service, and customer satisfaction.</p>
+            </div>
+          </div>
+          <!-- customers slider -->
+          <div class="grid grid-cols-5 place-items-center">
+              <div class="max-w-[600px] max-h-[450px] border rounded-3xl border-orange-500 px-5 py-10 col-span-5">
+                <p class="text-center text-[#6b7280]">FoodMan's culinary expertise never fails to impress! Every dish is a masterpiece, bursting with flavor and freshness.
+                </p> 
+                <div>
+                  <div class="mt-8 text-center">
+                    <img class="max-w-[100px] max-h-[100px] rounded-full inline" src="/img/client-1.jpg" alt="">
+                    <h3 class="mt-5 text-xl font-semibold">David Lee</h3>
+                    <h4 class="text-[#6b7280] font-semibold">Business Executive</h4>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Customers section end here -->
+
+    <!-- footer section start here -->
+    <section class="bg-[#fffcfa]">
+      <div class="container mx-auto  px-10 pt-10 pb-5 mt-24">
+        <div class="md:grid md:grid-cols-5 gap-16 sm:grid sm:grid-cols-2 sm:gap-16">
+          <div class="text-2xl font-semibold text-[#FC7F09] md:col-span-2 sm:col-span-1">
+            <a href="#">Food<span class="text-black">man</span></a>
+            <p class="text-base font-normal text-[#6b7280]">Embark on a gastronomic journey with FoodMan, where every bite tells a story and every dish is crafted to perfection.</p>
+          </div>
+          <div>
+            <h2 class="text-xl font-semibold mb-5">Product</h2>
+            <ul class="text-[#6b7280]">
+              <li><a class="hover:text-[#FC7F09] duration-500"  href="#">Menu</a></li>
+              <li><a class="hover:text-[#FC7F09] duration-500" href="#">Specials</a></li>
+              <li><a class="hover:text-[#FC7F09] duration-500" href="#">Meal Deals</a></li>
+              <li><a class="hover:text-[#FC7F09] duration-500" href="#">Catering Options</a></li>
+              <li><a class="hover:text-[#FC7F09] duration-500" href="#">Seasonal Offerings</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-xl font-semibold mb-5">Information</h2>
+            <ul class="text-[#6b7280]">
+              <li><a class="hover:text-[#FC7F09] duration-500"  href="#">Menu</a></li>
+              <li><a class="hover:text-[#FC7F09] duration-500" href="#">Specials</a></li>
+              <li><a class="hover:text-[#FC7F09] duration-500" href="#">Meal Deals</a></li>
+              <li><a class="hover:text-[#FC7F09] duration-500" href="#">Catering Options</a></li>
+              <li><a class="hover:text-[#FC7F09] duration-500" href="#">Seasonal Offerings</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-xl font-semibold mb-5">Company</h2>
+            <ul class="text-[#6b7280]">
+              <li><a class="hover:text-[#FC7F09] duration-500"  href="#">Menu</a></li>
+              <li><a class="hover:text-[#FC7F09] duration-500" href="#">Specials</a></li>
+              <li><a class="hover:text-[#FC7F09] duration-500" href="#">Meal Deals</a></li>
+              <li><a class="hover:text-[#FC7F09] duration-500" href="#">Catering Options</a></li>
+              <li><a class="hover:text-[#FC7F09] duration-500" href="#">Seasonal Offerings</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="mt-10 text-center">Design by <a target="_blank" class="text-[#FC7F09]" href="https://www.facebook.com/info.jonysarowar">Md:Sarowar</a> </p>
+      </div>
+    </section>
+    <!-- footer section end here -->
+
+    <script>
+      function Menu(e) {
+        let list = document.querySelector("ul");
+        // Access the name property of the clicked element
+        e.getAttribute("name") === "menu" 
+          ? (e.setAttribute("name", "close"), list.classList.add("top-[69px]"))
+          : (e.setAttribute("name", "menu"), list.classList.remove("top-[69px]"));
+      }
+    </script>
+
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- wow js -->
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <!-- main js -->
+    <script src="/js/main.js"></script>
+  </body>
+</html>
